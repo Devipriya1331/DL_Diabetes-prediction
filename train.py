@@ -1,13 +1,14 @@
 '''
-
+1.Number of times pregnant
+2.Plasma glucose concentration a 2 hrs in an oral glucose tolerance test
+3.Diagnostic blood pressure(mm Hg)
+4.Tricepts skin fold thickness(mm)
+5.2-hour serum insulin (mm U/ml)
+6.Body mass index (weight in kg/(height in m)^2)
+7.Diabetes pedigree function
+8.Age(years)
+10.Class variable (0 or 1)
  
-
-
-
-
-
-
-
 '''
 
 from numpy import loadtxt
@@ -51,3 +52,4 @@ with open("model.json","w")as json_file:
     json_file.write(model_json)
 model.save_weights("model.weights.h5")
 print("Saved model to disk")
+
